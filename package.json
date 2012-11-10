@@ -1,6 +1,6 @@
 {
   "name": "qrcode-emitter",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Emits QR codes found in an image stream.",
   "main": "index.js",
   "scripts": {
