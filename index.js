@@ -24,13 +24,15 @@ QR.prototype.start = function () {
       queuedImage = image;
 
       // scan the image *after* any more images arrive
-      process.setTimeout(scanForCode, 0);
+      setTimeout(scanForCode, 0);
     }
   }
 
   function scanForCode() {
     try {
-      self.emit('qrcode', qrcode.decode(queuedImage));
+      var image = new Image;
+      image.src = queuedImage;
+      self.emit('qrcode', qrcode.decode(image));
     } catch (e) {
       // probably didn't find a code
     }
