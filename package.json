@@ -11,6 +11,6 @@
   "license": "MIT",
   "dependencies": {
     "jsqrcode": "0.0.6",
-    "canvas": "~0.13.1"
+    "canvas": "~1.1.0"
   }
 }
